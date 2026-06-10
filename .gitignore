@@ -8,5 +8,3 @@ cache_sim
 .DS_Store
 Thumbs.db
 
-# Output files
-output.txt
