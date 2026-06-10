@@ -26,7 +26,6 @@ A highly configurable Cache Simulator written in C. It simulates a cache memory 
 ## File Structure
 
 - `cache_sim.c` - Core C source code implementing the simulator logic.
-- `Makefile` - Facilitates compilation, execution, and cleanup.
 - `config.txt` - Configuration file defining cache parameters.
 - `trace.txt` - Sample trace file containing memory read/write requests.
 - `README.md` - Documentation.
@@ -73,12 +72,12 @@ R 0x00000000
 ## Getting Started
 
 ### Prerequisites
-You need a C compiler (like `gcc`) and `make` installed on your system.
+You need a C compiler (like `gcc`) installed on your system.
 
 ### Compilation
 To compile the cache simulator, run:
 ```bash
-make
+gcc -Wall -Wextra -O2 -o cache_sim cache_sim.c
 ```
 This compiles the source code and generates the executable `cache_sim`.
 
@@ -87,15 +86,11 @@ To run the simulator with your configuration and trace files:
 ```bash
 ./cache_sim config.txt trace.txt
 ```
-Alternatively, you can use the Makefile shortcut to run with default files:
-```bash
-make run
-```
 
 ### Cleanup
-To clean up compiled binaries and output files:
+To clean up the compiled binary:
 ```bash
-make clean
+rm cache_sim
 ```
 
 ---
