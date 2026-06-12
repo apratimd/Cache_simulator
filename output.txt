@@ -2,7 +2,7 @@ Cache Configuration:
 Cache Size: 32 KB
 Block Size: 64 B
 Associativity: 4-way
-Replacement: LRU
+Replacement: PLRU
 Write Policy: write_back
 Write Allocate: yes
 
